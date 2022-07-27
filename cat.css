@@ -1,0 +1,152 @@
+html {
+    font-size: 20px;
+    margin: 0;
+    background: #8f0d14;
+}
+
+#marco {
+    width: 1325px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 16px;
+    margin-top: 1em;
+}
+
+#cielo {
+    border-radius: 16px;
+    width: 1325px;
+    height: 500px;
+    background: linear-gradient(to bottom, #5f0b0b 0%, #04B4AE 52%, #143b6b 100%);
+    position: absolute;
+    z-index: -30;
+    top: 0;
+    margin-top: 2em;
+}
+
+#edificios {
+    background: url('bg.svg');
+    height: 500px;
+    width: 1325px;
+    z-index: -15;
+    top: 10em;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    -webkit-animation: animar_edificios 18s linear infinite;
+    -ms-animation: animar_edificios 18s linear infinite;
+    -moz-animation: animar_edificios 18s linear infinite;
+    position: absolute;
+}
+
+
+/* Animacion edificios */
+
+@keyframes animar_edificios {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+@-webkit-keyframes animar_edificios {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+@-ms-keyframes animar_edificios {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+@-moz-keyframes animar_edificios {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+#luna {
+    width: 10em;
+    height: 6em;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    -moz-box-shadow: 30px 10px 0 #F7F8E0;
+    -webkit-box-shadow: 30px 10px 0 #F7F8E0;
+    box-shadow: 30px 10px 0 #F7F8E0;
+    margin-top: 1em;
+    margin-left: 50%;
+    position: absolute;
+    top: 5%;
+    z-index: -19;
+}
+
+#muro {
+    height: 23em;
+    width: 100%;
+    background: -moz-linear-gradient(top, #665741 0%, #ff0000 19%);
+    background: -webkit-linear-gradient(top, #b75002 0%, #ff2525 19%);
+    background: linear-gradient(to bottom, #666041 0%, #f81f1f 19%);
+    bottom: 0px;
+}
+
+#gato {
+    background: url('cat.svg');
+    height: 297px;
+    width: 507.5px;
+    margin-top: 2em;
+    margin-left: 2em;
+    z-index: 105;
+    -webkit-animation: sprite-animation 2s steps(16, end) infinite;
+    -moz-animation: sprite-animation 2s steps(16, end) infinite;
+    -ms-animation: sprite-animation 2s steps(16, end) infinite;
+    animation: sprite-animation 2s steps(16, end) infinite;
+}
+
+@-webkit-keyframes sprite-animation {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 8120px 0;
+    }
+}
+
+@-ms-keyframes sprite-animation {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 8120px 0;
+    }
+}
+
+@-moz-keyframes sprite-animation {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 8120px 0;
+    }
+}
+
+@keyframes sprite-animation {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 8120px 0;
+    }
+}

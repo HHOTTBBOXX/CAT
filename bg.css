@@ -1,0 +1,68 @@
+/* PRESENTATIONAL STYLES */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    color: #fff;
+    font-family: Helvetica;
+    padding: 25px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+
+/* DEMO STYLES */
+
+
+/* Parent */
+
+div {
+    margin: 0 0;
+}
+
+
+/* Add padding to the parent */
+
+.padding {
+    padding: 1px 1px;
+}
+
+
+/* Here come the children */
+
+
+/*
+.red {
+    background-color: #ff6b6b;
+}
+
+.orange {
+    background-color: #ff9e2c;
+}
+
+.yellow {
+    background-color: #eeee78;
+}
+
+.green {
+    background-color: #4ecd9d;
+}
+
+.blue {
+    background-color: #cdbc4e;
+} */
+
+.purple {
+    backdrop-filter: blur(0px);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 100%;
+    box-shadow: 35px 35px 68px 0px rgba(255, 254, 145, 0.5), inset -8px 1px 16px 0px rgba(255, 254, 145, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+    z-index: 10;
+}
